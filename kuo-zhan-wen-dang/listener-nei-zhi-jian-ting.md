@@ -128,6 +128,8 @@ listener onKillEntity(entity)
 
 ### onPlayerDamaged(dmg, damager) @p
 
+> <mark style="color:red;">**! 推荐使用下面新增的方式编写，在之后的版本很可能会移除参数传递**</mark>
+>
 > 当玩家受到伤害的时候触发
 >
 > 参数:
@@ -139,6 +141,25 @@ listener onKillEntity(entity)
 // 示例
 listener onPlayerDamaged(dmg, damager)
     tell(玩家 {damager} 对你造成了 {dmg} 真实伤害！快跑！！！)@p
+```
+
+✅ CsgPro 2.0.4
+
+> 新增了一个内置变量$event
+
+1. 获取事件的数据值
+
+```
+listener onPlayerDamaged()
+    tell(你受到了伤害 {$event.damage}) @p
+```
+
+2. 设置事件的数据值
+
+```
+listener onPlayerDamaged()
+    var($event.cancelled, true) # 取消玩家受到的伤害，配合条件语句效果更好
+    damage(20) @p # 手动对玩家造成伤害
 ```
 
 ### onPlayerRespawn @p
