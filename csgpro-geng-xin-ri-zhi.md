@@ -45,10 +45,9 @@ description: 将会展示每个版本更新的内容
 * 添加了扩展解析变量{target.uuid} 以获取实体的UUID
 * 添加了**WorldGuard**插件存在时卸载世界会同时删除对应世界配置文件
 * 优化了Csgtask文件解析器和编译器的代码
-
-
-
-\=
+* <mark style="color:blue;">**现在Function会以同步的方式运行**</mark>
+* <mark style="color:blue;">**新增onPlayerDamaged的内置变量$event**</mark>
+* <mark style="color:blue;">**现在if支持else语句**</mark>
 
 
 
