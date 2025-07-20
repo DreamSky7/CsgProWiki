@@ -80,6 +80,6 @@ function onJoinSuccess()
 
 我们额外说明一下 **onPlayerJoinLobby()** 部分，可以注意到在判断中出现了两个变量
 
-* **max\_player：**max\_player是Marco.yml文件中预处理的宏
-* **lobby\_player\_amount：**CsgPro在房间存在阶段会刷新的内置宏，这个宏是一直存在的，并会一直更新，其对应的就是大厅的玩家数量
+* **max\_player：**&#x6D;ax\_player是Marco.yml文件中预处理的宏
+* **lobby\_player\_amount：**&#x43;sgPro在房间存在阶段会刷新的内置宏，这个宏是一直存在的，并会一直更新，其对应的就是大厅的玩家数量
 
